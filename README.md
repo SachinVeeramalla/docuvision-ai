@@ -21,7 +21,8 @@ DocuVision AI automatically ingests documents, extracts text using OCR, summariz
 - **Backend**: FastAPI (Python), Tesseract OCR, Hugging Face Transformers or OpenAI API  
 - **Database**: Supabase (PostgreSQL) or self-hosted PostgreSQL (SQLAlchemy)  
 - **Frontend**: Next.js (React) with TailwindCSS  
-- **Infrastructure**: Docker, Docker Compose, AWS S3 (optional for file storage)
+- **Infrastructure**: Docker, Docker Compose, AWS S3 (optional for file storage)  
+- **CI/CD**: GitHub Actions for automated builds, tests, and deployments  
 
 ---
 
@@ -42,7 +43,8 @@ DocuVision AI automatically ingests documents, extracts text using OCR, summariz
 - [ ] 🧠 Summarization integration (Hugging Face/OpenAI)  
 - [ ] ⚠️ Risk classification module  
 - [ ] 💻 Next.js frontend dashboard  
-- [ ] 📦 Deployment with Docker Compose  
+- [ ] 📦 Docker Compose deployment  
+- [ ] 🚀 CI/CD pipelines with GitHub Actions ← *new milestone*  
 
 ---
 
