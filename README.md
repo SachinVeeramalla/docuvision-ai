@@ -1,51 +1,60 @@
 # 🚀 DocuVision AI
-
 **Intelligent Document Summarization & Risk Analysis Platform**
 
-DocuVision AI automatically ingests documents, extracts text with OCR, summarizes content with AI, and flags potential risks — turning unstructured documents into actionable insights.
+DocuVision AI automatically ingests documents, extracts text using OCR, summarizes content with AI, and flags potential risks — turning unstructured documents into actionable insights.
 
 ---
 
 ## 📌 What it does
 
-- Upload scanned PDFs or images of documents.
-- Extracts text with Tesseract OCR.
-- Generates summaries using Hugging Face NLP.
-- Flags potential risks using classification.
-- Displays results in a user-friendly dashboard.
+✅ Upload scanned PDFs or images of documents  
+✅ Extracts text with Tesseract OCR  
+✅ Generates summaries using Hugging Face Transformers or OpenAI API  
+✅ Flags potential risks with keyword-based or ML classification  
+✅ Answers document-specific questions (planned)  
+✅ User-friendly React/Next.js dashboard to display results  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Backend:** FastAPI, Python, SQLAlchemy, Tesseract OCR, Hugging Face Transformers
-- **Database:** PostgreSQL
-- **Frontend:** React.js (planned)
-- **Infrastructure:** Docker, Docker Compose, AWS S3 (optional)
+- **Backend**: FastAPI (Python), Tesseract OCR, Hugging Face Transformers or OpenAI API  
+- **Database**: Supabase (PostgreSQL) or self-hosted PostgreSQL (SQLAlchemy)  
+- **Frontend**: Next.js (React) with TailwindCSS  
+- **Infrastructure**: Docker, Docker Compose, AWS S3 (optional for file storage)
 
 ---
 
-## 🔑 Hugging Face Tasks Planned
+## 🔑 AI Tasks Planned
 
 ✅ Document Summarization  
-✅ Text Classification  
+✅ Text Classification (risk scoring)  
 ✅ Document Question Answering  
-✅ Visual Question Answering (optional)
+✅ Visual Question Answering (optional future milestone)
 
 ---
 
 ## 🚦 Milestones
 
-- [ ] Project structure & repo setup
-- [ ] FastAPI file upload API
-- [ ] OCR pipeline with Tesseract
-- [ ] Summarization integration
-- [ ] Risk classification
-- [ ] Frontend dashboard
-- [ ] Deployment with Docker Compose
+- [x] 📂 Project structure & repo setup  
+- [x] 📝 FastAPI file upload API  
+- [ ] 🔍 OCR pipeline with Tesseract  
+- [ ] 🧠 Summarization integration (Hugging Face/OpenAI)  
+- [ ] ⚠️ Risk classification module  
+- [ ] 💻 Next.js frontend dashboard  
+- [ ] 📦 Deployment with Docker Compose  
 
 ---
 
-## 🙌 Made by
+## ⚙️ Architecture
 
-Sachin Veeramalla (https://www.linkedin.com/in/sachin-veeramalla/)
+```plaintext
+[User]
+   ⬇️ upload document
+[Next.js Frontend]
+   ⬇️ calls
+[FastAPI Backend]
+   ⬇️ process
+OCR & AI Summarization & Risk Analysis
+   ⬇️ store metadata/results
+[Supabase/PostgreSQL Database]
